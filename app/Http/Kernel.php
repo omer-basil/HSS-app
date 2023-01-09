@@ -22,6 +22,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
+        \App\Http\Middleware\SetLocale::class,
     ];
 
     /**

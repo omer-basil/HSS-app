@@ -25,7 +25,7 @@ class StoreCategoryRequest extends FormRequest
     {
         return [
             'cat_name' => ['required', 'string'],
-            'cat_description' => ['required', 'string', 'max:225']
+            'cat_description' => ['required', 'string', 'max:225', 'unique:tags']
         ];
     }
 }

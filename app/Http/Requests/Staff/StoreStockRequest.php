@@ -24,9 +24,9 @@ class StoreStockRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'string', 'unique:colours', 'max:255'],
-            'image' => ['required', 'image'],
-            'name' => ['required', 'string', 'max:255'],
+            'colour_name' => ['required', 'string', 'unique:colours', 'max:255'],
+            'colour_image' => ['required', 'image'],
+            'size_name' => ['required', 'string', 'max:255'],
             'quantity' => ['required', 'integer'],
             'colour_id' => ['required', 'integer']
         ];
